@@ -15,9 +15,12 @@ function UsernameMenu() {
                 <CircleUserRound className="text-orange-500" />
                 {user?.email}
             </DropdownMenuTrigger>
-            <DropdownMenuContent className="flex flex-col gap-2 py-2 px-2">
+            <DropdownMenuContent className="flex flex-col gap-2 py-2 px-2 pt-4">
                 <DropdownMenuItem>
                     <Link to="/user-profile" className="font-bold hover:text-orange-500 transition-all">User profile</Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem>
+                    <Link to="/manage-restaurant" className="font-bold hover:text-orange-500 transition-all">Manage Restaurant</Link>
                 </DropdownMenuItem>
                 <Separator />
                 <DropdownMenuItem>
